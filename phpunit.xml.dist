@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php">
+  <testsuites>
+    <testsuite name="scan">
+      <directory suffix="Test.php">Tests/Scan</directory>
+    </testsuite>
+  </testsuites>
+  <php>
+    <const name="SCAN_USERNAME" value="good_username" />
+    <const name="SCAN_PASSWORD" value="good_password" />
+  </php>
+</phpunit>

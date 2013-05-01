@@ -1,0 +1,45 @@
+{
+    "name": "janiv/selenium-demo",
+    "description": "Simple demonstration on how to build Selenium scripts in PHP",
+    "keywords": ["selenium"],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "chibimagic/webdriver",
+                "version": "dev-master",
+                "dist": {
+                    "url": "https://github.com/chibimagic/WebDriver-PHP/archive/master.zip",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "WebDriver": ""
+                    }
+                }
+            }
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "phpunit/phpunit": "~3.7",
+        "phpunit/php-invoker": "~1.1",
+        "chibimagic/webdriver": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Russell Ahlstrom",
+            "email": "russell.ahlstrom@gmail.com",
+            "homepage": "http://russell.ahlstromology.com"
+        }
+    ],
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": {
+            "Tests": ""
+        }
+    }
+}
